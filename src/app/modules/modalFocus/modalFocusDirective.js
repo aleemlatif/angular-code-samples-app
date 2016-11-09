@@ -21,12 +21,14 @@
                     if (value === true) {
                         $timeout(function () {
                             element[0].focus();
-                        });
+                        }, 100, false);
                     }
                 });
 
                 element.bind('blur', function () {
-                    scope.$apply(isModalOpened.assign(scope, false));
+                    $timeout(function () {
+                        scope.$apply(isModalOpened.assign(scope, false));
+                    }, 100, false);
                 })
 
             }
