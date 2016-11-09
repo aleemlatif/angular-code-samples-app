@@ -1,21 +1,23 @@
-<div data-ng-app="AL-app" data-ng-controller="ModalFocusController as vm">
+<div data-ng-app="AL-app" data-ng-controller="ModalWinFocusController as vm">
 
     <div class="row">
         <div class="col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xs-12 col-sm-10 col-md-10 col-lg-10">
 
-            <button class="btn" ng-click="vm.open">Click to Open Modal</button>
+            <button class="btn btn-primary" ng-click="vm.open('sm')">Click to Open Modal</button>
 
-            <div modal="vm.isOpen" close="vm.close()">
+            <script type="text/ng-template" id="modalTemplate.html">
                 <div class="modal-header">
-                    <h4>Modal</h4>
+                    <h3 class="modal-title">Modal</h3>
                 </div>
                 <div class="modal-body">
                     Name: <input type="text" name="inputField" autofocus setFocus="vm.isOpen">
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-warning cancel" ng-click="vm.close()">Cancel</button>
+                    <button class="btn btn-warning" ng-click="vm.closeWin()">Cancel</button>
+                    <button class="btn btn-warning" ng-click="vm.close()">OK</button>
                 </div>
-            </div>
+            </script>
+
         </div>
     </div>
 

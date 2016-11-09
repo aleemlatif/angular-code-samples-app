@@ -1,28 +1,66 @@
-// Controller
+// Controller : ModalWinFocusController
 
 (function () {
     'use strict';
 
     angular
         .module('AL-app')
-        .controller('ModalFocusController', ModalFocusController);
+        .controller('ModalWinFocusController', ModalWinFocusController);
 
-    ModalFocusController.$inject = ['$scope'];
+    ModalWinFocusController.$inject = ['$scope', '$modal', '$log'];
 
-    function ModalFocusController($scope) {
+    function ModalWinFocusController($scope, $modal, $log) {
 
         var vm = this;
-        vm.isOpen = true;
-        vm.open = vm._open;
-        vm.close = vm._close;
+        vm.isOpen = false;
+        vm.open = _open;
+        vm.close = _close;
+        vm.animationsEnabled = true;
 
-        function _open()  {
+        function _open(size)  {
             vm.isOpen = true;
+
+            var modalInstance = $modal.open({
+                animation: vm.animationsEnabled,
+                templateUrl: 'modalTemplate.html',
+                controller: 'ModalInstanceCtrl',
+                size: size
+            });
         }
 
         function _close()  {
             vm.isOpen = false;
+            modalInstance.close();
         }
     }
 
 })();
+
+// Controller : ModalInstanceCtrl
+(function () {
+    'use strict';
+
+    angular
+        .module('AL-app')
+        .controller('ModalInstanceCtrl', ModalInstanceCtrl);
+
+    ModalInstanceCtrl.$inject = ['$scope', '$modalInstance'];
+
+    function ModalInstanceCtrl($scope, $modalInstance) {
+
+        var vm = this;
+        vm.closeWin = _closeWin;
+        vm.cancelWin = _cancelWin;
+
+        function _closeWin()  {
+            $modalInstance.close();
+        }
+
+        function _cancelWin()  {
+            $modalInstance.dismiss('cancel');
+        }
+    }
+
+})();
+
+
