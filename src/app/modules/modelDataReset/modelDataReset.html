@@ -1,0 +1,39 @@
+<div data-ng-app="AL-app" data-ng-controller="ModelDataResetController as vm">
+
+    <div class="row">
+        <div class="col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xs-12 col-sm-10 col-md-10 col-lg-10">
+
+            <p class="alert alert-info"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                Modify the text in the input fields below: </p>
+
+            <div ng-repeat="item in vm.data">
+                <div class="row">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        {{$index + 1}} )
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <input type="text" class="form-control" ng-model="item.text" ng-click="vm.dataReseted=false">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        {{$index + 2}} )
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <input type="text" class="form-control" ng-model="item.text2" ng-click="vm.dataReseted=false">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <span class="text-success">Original Model Data: <strong>{{vm.origData}}</strong> </span>
+            <hr>
+            <span class="text-danger">Updated Model Data: <strong>{{vm.data}}</strong> </span>
+            <hr>
+            <p class="alert alert-success" ng-if="vm.dataReseted"> Data has been successfully reset to Initial State!!! </p>
+
+            <button type="button" role="button" class="btn btn-primary" ng-click="vm.resetData()">Reset Data</button>
+
+        </div>
+    </div>
+
+</div>

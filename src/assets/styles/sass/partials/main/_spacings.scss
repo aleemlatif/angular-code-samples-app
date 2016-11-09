@@ -1,0 +1,339 @@
+//  @ title:  Aleems webclient stylesheet
+//  @ author: Aleem Latif
+//  @ desc:   generic styles for margin and padding
+@import '_variables';
+
+/* reusable margin patterns m=margin r=right, l=left, t=top, b=bottom */
+.AL-app {
+    // margin top
+    .mt-0 {
+        @include margin(top, 0);
+    }
+
+    .mt-3 {
+        @include margin(top, 3px);
+    }
+
+    .mt-5 {
+        @include margin(top, 5px);
+    }
+
+    .mt-10 {
+        @include margin(top, 10px);
+    }
+
+    .mt-15 {
+        @include margin(top, 15px);
+    }
+
+    .mt-20 {
+        @include margin(top, 20px);
+    }
+
+    .mt-25 {
+        @include margin(top, 25px);
+    }
+
+    .mt-30 {
+        @include margin(top, 30px);
+    }
+
+    // margin right
+    .mr-0 {
+        @include margin(right, 0);
+    }
+
+    .mr-3 {
+        @include margin(right, 3px);
+    }
+
+    .mr-5 {
+        @include margin(right, 5px);
+    }
+
+    .mr-10 {
+        @include margin(right, 10px);
+    }
+
+    .mr-15 {
+        @include margin(right, 15px);
+    }
+
+    .mr-20 {
+        @include margin(right, 20px);
+    }
+
+    .mr-25 {
+        @include margin(right, 25px);
+    }
+
+    .mr-30 {
+        @include margin(right, 30px);
+    }
+
+    // margin left
+    .ml-0 {
+        @include margin(left, 0);
+    }
+
+    .ml-3 {
+        @include margin(left, 3px);
+    }
+
+    .ml-5 {
+        @include margin(left, 5px);
+    }
+
+    .ml-10 {
+        @include margin(left, 10px);
+    }
+
+    .ml-15 {
+        @include margin(left, 15px);
+    }
+
+    .ml-20 {
+        @include margin(left, 20px);
+    }
+
+    .ml-25 {
+        @include margin(left, 25px);
+    }
+
+    .ml-30 {
+        @include margin(left, 30px);
+    }
+
+    // margin bottom
+    .mb-0 {
+        @include margin(bottom, 0);
+    }
+
+    .mb-3 {
+        @include margin(bottom, 3px);
+    }
+
+    .mb-5 {
+        @include margin(bottom, 5px);
+    }
+
+    .mb-10 {
+        @include margin(bottom, 10px);
+    }
+
+    .mb-15 {
+        @include margin(bottom, 15px);
+    }
+
+    .mb-20 {
+        @include margin(bottom, 20px);
+    }
+
+    .mb-25 {
+        @include margin(bottom, 25px);
+    }
+
+    .mb-30 {
+        @include margin(bottom, 30px);
+    }
+
+    // reusable padding patterns p=padding t=top, r=right, b=bottom l=left
+
+    // padding top
+    .pt-0 {
+        @include padding(top, 0);
+    }
+
+    .pt-3 {
+        @include padding(top, 3px);
+    }
+
+    .pt-5 {
+        @include padding(top, 5px);
+    }
+
+    .pt-10 {
+        @include padding(top, 10px);
+    }
+
+    .pt-15 {
+        @include padding(top, 15px);
+    }
+
+    .pt-20 {
+        @include padding(top, 20px);
+    }
+
+    .pt-25 {
+        @include padding(top, 25px);
+    }
+
+    .pt-30 {
+        @include padding(top, 30px);
+    }
+
+    // padding right
+    .pr-0 {
+        @include padding(right, 0);
+    }
+
+    .pr-3 {
+        @include padding(right, 3px);
+    }
+
+    .pr-5 {
+        @include padding(right, 5px);
+    }
+
+    .pr-10 {
+        @include padding(right, 10px);
+    }
+
+    .pr-15 {
+        @include padding(right, 15px);
+    }
+
+    .pr-20 {
+        @include padding(right, 20px);
+    }
+
+    .pr-25 {
+        @include padding(right, 25px);
+    }
+
+    .pr-30 {
+        @include padding(right, 30px);
+    }
+
+    // padding bottom
+    .pb-0 {
+        @include padding(bottom, 0);
+    }
+
+    .pb-3 {
+        @include padding(bottom, 3px);
+    }
+
+    .pb-5 {
+        @include padding(bottom, 5px);
+    }
+
+    .pb-10 {
+        @include padding(bottom, 10px);
+    }
+
+    .pb-15 {
+        @include padding(bottom, 15px);
+    }
+
+    .pb-20 {
+        @include padding(bottom, 20px);
+    }
+
+    .pb-25 {
+        @include padding(bottom, 25px);
+    }
+
+    .pb-30 {
+        @include padding(bottom, 30px);
+    }
+
+    // padding left
+    .pl-0 {
+        @include padding(left, 0);
+    }
+
+    .pl-3 {
+        @include padding(left, 3px);
+    }
+
+    .pl-5 {
+        @include padding(left, 5px);
+    }
+
+    .pl-10 {
+        @include padding(left, 10px);
+    }
+
+    .pl-15 {
+        @include padding(left, 15px);
+    }
+
+    .pl-20 {
+        @include padding(left, 20px);
+    }
+
+    .pl-25 {
+        @include padding(left, 25px);
+    }
+
+    .pl-30 {
+        @include padding(left, 30px);
+    }
+
+    /* Utility padding values */
+    .pad-0 {
+        @include padding('', 0px);
+    }
+
+    .pad-3 {
+        @include padding('', 3px);
+    }
+
+    .pad-5 {
+        @include padding('', 5px);
+    }
+
+    .pad-10 {
+        @include padding('', 10px);
+    }
+
+    .pad-15 {
+        @include padding('', 15px);
+    }
+
+    .pad-20 {
+        @include padding('', 20px);
+    }
+
+    .pad-25 {
+        @include padding('', 25px);
+    }
+
+    .pad-30 {
+        @include padding('', 30px);
+    }
+
+    /* Utility margin values */
+    .mar-0 {
+        @include padding('', 0px);
+    }
+
+    .mar-3 {
+        @include padding('', 3px);
+    }
+
+    .mar-5 {
+        @include padding('', 5px);
+    }
+
+    .mar-10 {
+        @include padding('', 10px);
+    }
+
+    .mar-15 {
+        @include padding('', 15px);
+    }
+
+    .mar-20 {
+        @include padding('', 20px);
+    }
+
+    .mar-25 {
+        @include padding('', 25px);
+    }
+
+    .mar-30 {
+        @include padding('', 30px);
+    }
+}

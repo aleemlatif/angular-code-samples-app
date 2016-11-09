@@ -1,0 +1,5 @@
+{
+    "directory": "src/vendor",
+	"proxy":"http://147.200.33.212:3128",
+    "https-proxy":"http://147.200.33.212:3128"
+}

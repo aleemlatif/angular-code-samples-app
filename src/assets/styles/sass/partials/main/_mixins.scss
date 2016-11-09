@@ -1,0 +1,175 @@
+//  @title:  Aleems webclient stylesheet
+//  @author: Aleem Latif
+//  @desc:   mixin functions to generate css rules dynamically
+// --------------------------------------------------
+
+// Breakpoints
+@mixin breakpoint($class) {
+    @if $class == xs {
+        @media (max-width: 767px) { @content; }
+    }
+
+    @else if $class == sm {
+        @media (min-width: 768px) { @content; }
+    }
+
+    @else if $class == sm-md {
+        @media (min-width: 768px) and (max-width: 992px) { @content; }
+    }
+
+    @else if $class == md {
+        @media (min-width: 992px) { @content; }
+    }
+
+    @else if $class == md-lg {
+        @media (min-width: 992px) and (max-width: 1199px) { @content; }
+    }
+
+    @else if $class == lg {
+        @media (min-width: 1200px) { @content; }
+    }
+
+    @else {
+        @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    }
+}
+
+//  @desc: fontawesome cross browser fix
+//  @usage: .#{$fa-css-prefix}-rotate-90  { @include fa-icon-rotate(90deg, 1);  }
+@mixin fa-icon-rotate($degrees, $rotation) {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation});
+    -webkit-transform: rotate($degrees);
+    -moz-transform: rotate($degrees);
+    -ms-transform: rotate($degrees);
+    -o-transform: rotate($degrees);
+    transform: rotate($degrees);
+}
+
+//  @desc: fontawesome cross browser fix
+//  @usage: .#{$fa-css-prefix}-flip-horizontal { @include fa-icon-flip(-1, 1, 0); }
+@mixin fa-icon-flip($horiz, $vert, $rotation) {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation});
+    -webkit-transform: scale($horiz, $vert);
+    -moz-transform: scale($horiz, $vert);
+    -ms-transform: scale($horiz, $vert);
+    -o-transform: scale($horiz, $vert);
+    transform: scale($horiz, $vert);
+}
+
+//  @usage: font-size: calculateRem($size); }
+@function calculateRem($size) {
+    $remSize: $size / 14px;
+    @return $remSize;
+}
+
+//  @usage: p { @include font-size(12px)}
+@mixin font-size($size: '14px') {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+//  @usage: .animate {   @include animation('slide-down 5s 3'); }
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};
+}
+
+//  @usage: a {   color: $grey; @include transition(color .3s ease);  &:hover {   text-decoration: underline;  } }
+@mixin transition($args) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+//  @usage: @include text-align(right);
+@mixin text-align($direction) {
+    @if $direction == left {
+        text-align: #{$direction};
+    } @else if $direction == right {
+        text-align: #{$direction};
+    } @else if $direction == center {
+        text-align: #{$direction};
+    } @else if $direction == justify {
+        text-align: #{$direction};
+    }
+}
+
+//  @usage: @include placeholder(color, fontsize)
+@mixin placeholder($color: '#eee', $fontsize: '1em') {
+
+    &:-moz-placeholder {
+        @include font-size($fontsize);
+        color: $color;
+    }
+
+    &::-moz-placeholder {
+        @include font-size($fontsize);
+        color: $color;
+    }
+
+    &:-ms-input-placeholder {
+        @include font-size($fontsize);
+        color: $color;
+    }
+
+    &::-webkit-input-placeholder {
+        @include font-size($fontsize);
+        color: $color;
+    }
+}
+
+//  .drop-shadow(HORIZONTAL, VERTICAL, BLUR, ALPHA);
+@mixin drop-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $alpha: 0.1) {
+    -webkit-box-shadow: $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
+    -moz-box-shadow: $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
+    box-shadow: $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
+}
+
+//@usage: @include box-shadow(HORIZONTAL VERTICAL BLUR COLOR))
+@mixin box-shadow($shadow: 0 1px 3px rgba(0, 0, 0, .25)) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+//  @usage: p { @include margin(right, 10px); }
+@mixin margin($direction, $val) {
+    @if $direction == left {
+        margin-left: #{$val};
+    } @else if $direction == right {
+        margin-right: #{$val};
+    } @else if $direction == top {
+        margin-top: #{$val};
+    } @else if $direction == bottom {
+        margin-bottom: #{$val};
+    } @else {
+        margin: #{$val};
+    }
+}
+
+//  @usage: p { @include padding(left, 5px); }
+@mixin padding($direction, $val) {
+    @if $direction == left {
+        padding-left: #{$val};
+    } @else if $direction == right {
+        padding-right: #{$val};
+    } @else if $direction == top {
+        padding-top: #{$val};
+    } @else if $direction == bottom {
+        padding-bottom: #{$val};
+    } @else {
+        padding: #{$val};
+    }
+}
+
+//  @usage: p { @include msg-block(#000, #fff, #eee); }
+@mixin msg-block($color, $bg-bg, $border-color) {
+    color: $color;
+    background-color: $bg-bg;
+    border-color: $border-color;
+}

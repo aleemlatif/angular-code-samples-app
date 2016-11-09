@@ -1,0 +1,18 @@
+<div class="AL-content-inner">
+    <!-- start: .breadcrumbs -->
+    <div ng-include src="'app/components/breadcrumbs/breadcrumbs.html'"></div>
+    <!--/ .breadcrumbs -->
+
+    <div class="row">
+
+        <!-- start : #sidebar -->
+        <div data-ui-view="colLeft" class="AL-col-left col-xs-12 col-sm-4 col-md-3 col-lg-2 hidden-print" ></div>
+        <!--/ #sidebar -->
+
+        <!-- start : .page-content -->
+        <div data-ui-view="colRight"
+             class="AL-col-right col-xs-12 col-sm-8 col-md-9 col-lg-10  AL-page-content"></div>
+        <!--/ .page-content -->
+
+    </div>
+</div>

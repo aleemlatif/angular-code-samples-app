@@ -1,0 +1,55 @@
+/**
+  @ title:  Aleems webclient stylesheet
+  @ author: Aleem Latif
+  @ desc:   Custom dynamic sass variables
+*/
+
+// CSS folders
+$images-folder: '../../images/';
+$fonts-folder: '../fonts/';
+
+// Branding colors
+$br-danger: #f34235;
+$br-info: #2095f2;
+$br-inverse: #363f45;
+$br-primary: #3F51B5;
+$br-success: #4caf50;
+$br-warning: #fe9700;
+
+// Generic Colors
+$br-amber: #FFC107;
+$br-blue: #0069b4;
+$br-black: #000000;
+$br-dark-blue: #002664;
+$br-dark-grey: #BABABA;
+$br-dark-red: #c44646;
+$br-grey-darker: #2b3d51;
+$br-grey-dark: #515d6e;
+$br-grey: #A0AAB2;
+$br-grey-light: #e6e9ee;
+$br-grey-lighter: #f4f5f5;
+$br-grey-mid: #666;
+$br-green: #3c763d;
+$br-light-blue:  #009ED7;
+$br-light-grey: #e2e2e2;
+$br-noir: #212121;
+$br-orange: #fe5621;
+$br-pink: #e91e63;
+$br-purple: #6639b6;
+$br-smoke-white: #f5f5f5;
+$br-red: #ea5555;
+$br-white: #ffffff;
+
+// header
+$header-bg-grad-from: #d9daf7;
+$header-bg-grad-to: $br-smoke-white;
+
+// navbar
+$color-nav-bar: rgb(54, 63, 69);
+$color-nav-selected: #337ab7;
+
+// footer
+$footer-text-color: $br-white;
+$footer-bg-color: $br-blue;
+$footer-item-border-left: $br-white;
+$footer-item-border-right: #A09E9E;

@@ -1,0 +1,67 @@
+/**
+  @ title:  Aleems webclient stylesheet
+  @ author: Aleem Latif
+  @ desc:   styles for footer section
+*/
+@import 'variables';
+
+.AL-app {
+
+    .AL-footer {
+        padding-top: 20px;
+        color: $br-white;
+        font-size: 0.80em;
+
+        .navbar {
+            background-color: $br-inverse;
+            min-height: 30px;
+
+            .navbar-nav {
+
+                li {
+                    a, a:hover, a:focus {
+                        color: $br-black;
+                        background-color: transparent;
+                        border-left: 1px solid $footer-item-border-left;
+                        border-right: 1px solid $footer-item-border-right;
+                        padding-top: 7px;
+                        padding-bottom: 7px;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                        &:focus {
+                            outline: dotted thin;
+                        }
+                    }
+
+                    &:first-child {
+                        a {
+                            border-left: 0;
+                        }
+                    }
+                    &:last-child {
+                        a {
+                            border-right: 0;
+                        }
+                    }
+                }
+                &.open {
+
+                    a, a:hover, a:focus {
+                        color: $br-black;
+                    }
+                }
+            }
+
+            .footer-text {
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                text-align: center;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+

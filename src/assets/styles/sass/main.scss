@@ -1,0 +1,20 @@
+/**
+  @ title: Application Specific Styles
+  @ author: Aleem Latif
+  @ desc: application specific custom styles
+*/
+
+@import "compass/css3/border-radius";
+@import "compass/css3/box-sizing";
+@import "compass/css3/images";
+
+// required dynamic modules
+@import "partials/main/variables";
+@import "partials/main/mixins";
+@import "partials/main/default";
+@import "partials/main/footer";
+@import "partials/main/header";
+@import "partials/main/main";
+@import "partials/main/navbar";
+@import "partials/main/responsive";
+@import "partials/main/spacings";
