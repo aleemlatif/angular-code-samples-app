@@ -1,23 +1,22 @@
-// Controller : ModalWinFocusController
+// Controller : ModalModalFocusController
 
 (function () {
     'use strict';
 
     angular
         .module('AL-app')
-        .controller('ModalWinFocusController', ModalWinFocusController);
+        .controller('ModalFocusController', ModalFocusController);
 
-    ModalWinFocusController.$inject = ['$scope', '$modal', '$log'];
+    ModalFocusController.$inject = ['$scope', '$modal', '$log'];
 
-    function ModalWinFocusController($scope, $modal, $log) {
+    function ModalFocusController($scope, $modal, $log) {
 
         var vm = this;
         vm.isOpen = false;
-        vm.open = _open;
-        vm.close = _close;
+        vm.openModal = _openModal;
         vm.animationsEnabled = true;
 
-        function _open(size)  {
+        function _openModal(size)  {
             vm.isOpen = true;
 
             var modalInstance = $modal.open({
@@ -27,14 +26,10 @@
                 size: size
             });
         }
-
-        function _close()  {
-            vm.isOpen = false;
-            modalInstance.close();
-        }
     }
 
 })();
+
 
 // Controller : ModalInstanceCtrl
 (function () {
@@ -48,19 +43,11 @@
 
     function ModalInstanceCtrl($scope, $modalInstance) {
 
-        var vm = this;
-        vm.closeWin = _closeWin;
-        vm.cancelWin = _cancelWin;
+        $scope.cancelModal = _cancelModal;
 
-        function _closeWin()  {
-            $modalInstance.close();
-        }
-
-        function _cancelWin()  {
+        function _cancelModal()  {
             $modalInstance.dismiss('cancel');
         }
     }
 
 })();
-
-
