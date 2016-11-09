@@ -12,20 +12,20 @@
 
         return {
 
-            link: function(scope, element, attrs) {
+            link: function (scope, element, attrs) {
 
                 var isModalOpened = $parse(attrs.setFocus);
 
-                scope.$watch(isModalOpened, function(value) {
+                scope.$watch(isModalOpened, function (value) {
 
-                    if(value === true) {
-                        $timeout(function() {
+                    if (value === true) {
+                        $timeout(function () {
                             element[0].focus();
                         });
                     }
                 });
 
-                element.bind('blur', function() {
+                element.bind('blur', function () {
                     scope.$apply(isModalOpened.assign(scope, false));
                 })
 

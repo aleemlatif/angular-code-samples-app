@@ -1,4 +1,4 @@
-// Controller : ModalModalFocusController
+// Controller : ModalFocusController
 
 (function () {
     'use strict';
@@ -12,12 +12,12 @@
     function ModalFocusController($scope, $modal, $log) {
 
         var vm = this;
-        vm.isOpen = false;
+        $scope.isOpen = false;
         vm.openModal = _openModal;
         vm.animationsEnabled = true;
 
         function _openModal(size)  {
-            vm.isOpen = true;
+            $scope.isOpen = true;
 
             var modalInstance = $modal.open({
                 animation: vm.animationsEnabled,
@@ -42,11 +42,12 @@
     ModalInstanceCtrl.$inject = ['$scope', '$modalInstance'];
 
     function ModalInstanceCtrl($scope, $modalInstance) {
-
+        $scope.isOpen = true;
         $scope.cancelModal = _cancelModal;
 
         function _cancelModal()  {
             $modalInstance.dismiss('cancel');
+            $scope.isOpen = false;
         }
     }
 
