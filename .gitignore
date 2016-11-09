@@ -1,0 +1,15 @@
+node_modules
+dist
+!src/vendor
+!src/vendor/**/dist
+.tmp
+.sass-cache
+coverage
+.idea
+test-results.xml
+*.log
+.svn
+*.iml
+test-reports
+node_modules/protractor/selenium
+.sonar

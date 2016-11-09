@@ -1,0 +1,44 @@
+/**
+  @ title:  Aleems webclient stylesheet
+  @ author: Aleem Latif
+  @ desc:   styles for header
+*/
+@import 'variables';
+
+.AL-app {
+
+    .AL-navbar {
+        background-color: $color-nav-bar;
+        margin-bottom: 2px;
+
+        .nav-pills {
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: stretch;
+
+            li {
+                display: flex;
+                justify-content: flex-start;
+                align-items: stretch;
+                align-content: stretch;
+                border: 0;
+
+                a {
+                    border-radius: 0;
+                    border-right: 1px solid #777;
+                    color: $br-white;
+                    font-weight: 500;
+
+                    &:hover {
+                        text-decoration: none;
+                        background-color: $br-blue;
+                    }
+                }
+
+            }
+        }
+    }
+}
+

@@ -1,0 +1,566 @@
+/**
+  @ title: Application Specific Styles
+  @ author: Aleem Latif
+  @ desc: application specific custom styles
+*/
+/**
+  @ title:  Aleems webclient stylesheet
+  @ author: Aleem Latif
+  @ desc:   Custom dynamic sass variables
+*/
+/**
+  @ title:  Aleems webclient stylesheet
+  @ author: Aleem Latif
+  @ desc:   default css rules
+*/
+/**
+  @ title:  Aleems webclient stylesheet
+  @ author: Aleem Latif
+  @ desc:   Custom dynamic sass variables
+*/
+/* line 12, ../sass/partials/main/_default.scss */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .data-ng-cloak {
+  display: none !important;
+}
+
+/* common styles */
+/* line 17, ../sass/partials/main/_default.scss */
+.AL-app {
+  /* hides from ie-mac \*/
+  /* upgrade browsers message block */
+}
+/* line 20, ../sass/partials/main/_default.scss */
+.AL-app .clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 28, ../sass/partials/main/_default.scss */
+.AL-app .clearfix {
+  display: inline-block;
+}
+/* line 34, ../sass/partials/main/_default.scss */
+.AL-app * html .clearfix {
+  height: 1%;
+}
+/* line 38, ../sass/partials/main/_default.scss */
+.AL-app .clearfix {
+  display: block;
+}
+/* line 43, ../sass/partials/main/_default.scss */
+.AL-app h1, .AL-app h2, .AL-app h3, .AL-app h4, .AL-app h5, .AL-app h6 {
+  margin-top: 0;
+}
+/* line 46, ../sass/partials/main/_default.scss */
+.AL-app h1 {
+  font-size: 2.8rem;
+}
+/* line 49, ../sass/partials/main/_default.scss */
+.AL-app h2 {
+  font-size: 2.4rem;
+}
+/* line 52, ../sass/partials/main/_default.scss */
+.AL-app h3 {
+  font-size: 2.2rem;
+}
+/* line 55, ../sass/partials/main/_default.scss */
+.AL-app h4 {
+  font-size: 2.0rem;
+}
+/* line 58, ../sass/partials/main/_default.scss */
+.AL-app h5 {
+  font-size: 1.8rem;
+}
+/* line 61, ../sass/partials/main/_default.scss */
+.AL-app h6 {
+  font-size: 1.6rem;
+}
+/* line 66, ../sass/partials/main/_default.scss */
+.AL-app .browsehappy, .AL-app .browse-happy {
+  margin: 2em auto;
+  background: #ccc;
+  color: #000;
+  padding: 1em;
+  text-align: center;
+  display: block;
+}
+/* line 76, ../sass/partials/main/_default.scss */
+.AL-app a:hover {
+  cursor: pointer;
+}
+
+/**
+  @ title:  Aleems webclient stylesheet
+  @ author: Aleem Latif
+  @ desc:   styles for footer section
+*/
+/**
+  @ title:  Aleems webclient stylesheet
+  @ author: Aleem Latif
+  @ desc:   Custom dynamic sass variables
+*/
+/* line 10, ../sass/partials/main/_footer.scss */
+.AL-app .AL-footer {
+  padding-top: 20px;
+  color: #ffffff;
+  font-size: 0.80em;
+}
+/* line 15, ../sass/partials/main/_footer.scss */
+.AL-app .AL-footer .navbar {
+  background-color: #363f45;
+  min-height: 30px;
+}
+/* line 22, ../sass/partials/main/_footer.scss */
+.AL-app .AL-footer .navbar .navbar-nav li a, .AL-app .AL-footer .navbar .navbar-nav li a:hover, .AL-app .AL-footer .navbar .navbar-nav li a:focus {
+  color: #000000;
+  background-color: transparent;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #A09E9E;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+/* line 30, ../sass/partials/main/_footer.scss */
+.AL-app .AL-footer .navbar .navbar-nav li a:hover, .AL-app .AL-footer .navbar .navbar-nav li a:hover:hover, .AL-app .AL-footer .navbar .navbar-nav li a:focus:hover {
+  text-decoration: underline;
+}
+/* line 33, ../sass/partials/main/_footer.scss */
+.AL-app .AL-footer .navbar .navbar-nav li a:focus, .AL-app .AL-footer .navbar .navbar-nav li a:hover:focus, .AL-app .AL-footer .navbar .navbar-nav li a:focus:focus {
+  outline: dotted thin;
+}
+/* line 39, ../sass/partials/main/_footer.scss */
+.AL-app .AL-footer .navbar .navbar-nav li:first-child a {
+  border-left: 0;
+}
+/* line 44, ../sass/partials/main/_footer.scss */
+.AL-app .AL-footer .navbar .navbar-nav li:last-child a {
+  border-right: 0;
+}
+/* line 51, ../sass/partials/main/_footer.scss */
+.AL-app .AL-footer .navbar .navbar-nav.open a, .AL-app .AL-footer .navbar .navbar-nav.open a:hover, .AL-app .AL-footer .navbar .navbar-nav.open a:focus {
+  color: #000000;
+}
+/* line 57, ../sass/partials/main/_footer.scss */
+.AL-app .AL-footer .navbar .footer-text {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/**
+  @ title:  Aleems webclient stylesheet
+  @ author: Aleem Latif
+  @ desc:   styles for header
+*/
+/**
+  @ title:  Aleems webclient stylesheet
+  @ author: Aleem Latif
+  @ desc:   Custom dynamic sass variables
+*/
+/* line 10, ../sass/partials/main/_header.scss */
+.AL-app .AL-header {
+  min-height: 80px;
+  background-color: #ffffff;
+  border-bottom: 5px solid #337ab7;
+}
+/* line 15, ../sass/partials/main/_header.scss */
+.AL-app .AL-header .header {
+  margin: 22px;
+  font-weight: bolder;
+}
+
+/**
+  @ title:  Aleems webclient stylesheet
+  @ author: Aleem Latif
+  @ desc:   application specific styling rules
+*/
+/* line 9, ../sass/partials/main/_main.scss */
+.AL-app .breadcrumb {
+  background-color: transparent;
+}
+
+/**
+  @ title:  Aleems webclient stylesheet
+  @ author: Aleem Latif
+  @ desc:   styles for header
+*/
+/**
+  @ title:  Aleems webclient stylesheet
+  @ author: Aleem Latif
+  @ desc:   Custom dynamic sass variables
+*/
+/* line 10, ../sass/partials/main/_navbar.scss */
+.AL-app .AL-navbar {
+  background-color: #363f45;
+  margin-bottom: 2px;
+}
+/* line 14, ../sass/partials/main/_navbar.scss */
+.AL-app .AL-navbar .nav-pills {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+/* line 21, ../sass/partials/main/_navbar.scss */
+.AL-app .AL-navbar .nav-pills li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  border: 0;
+}
+/* line 28, ../sass/partials/main/_navbar.scss */
+.AL-app .AL-navbar .nav-pills li a {
+  border-radius: 0;
+  border-right: 1px solid #777;
+  color: #ffffff;
+  font-weight: 500;
+}
+/* line 34, ../sass/partials/main/_navbar.scss */
+.AL-app .AL-navbar .nav-pills li a:hover {
+  text-decoration: none;
+  background-color: #0069b4;
+}
+
+/**
+  @ title:  Aleems webclient stylesheet
+  @ author: Aleem Latif
+  @ desc:   application specific styles for responsive design & media queries
+*/
+/* Responsive: older mobile devices */
+/**
+  @ title:  Aleems webclient stylesheet
+  @ author: Aleem Latif
+  @ desc:   Custom dynamic sass variables
+*/
+/* reusable margin patterns m=margin r=right, l=left, t=top, b=bottom */
+/* line 7, ../sass/partials/main/_spacings.scss */
+.AL-app {
+  /* Utility padding values */
+  /* Utility margin values */
+}
+/* line 9, ../sass/partials/main/_spacings.scss */
+.AL-app .mt-0 {
+  margin-top: 0;
+}
+/* line 13, ../sass/partials/main/_spacings.scss */
+.AL-app .mt-3 {
+  margin-top: 3px;
+}
+/* line 17, ../sass/partials/main/_spacings.scss */
+.AL-app .mt-5 {
+  margin-top: 5px;
+}
+/* line 21, ../sass/partials/main/_spacings.scss */
+.AL-app .mt-10 {
+  margin-top: 10px;
+}
+/* line 25, ../sass/partials/main/_spacings.scss */
+.AL-app .mt-15 {
+  margin-top: 15px;
+}
+/* line 29, ../sass/partials/main/_spacings.scss */
+.AL-app .mt-20 {
+  margin-top: 20px;
+}
+/* line 33, ../sass/partials/main/_spacings.scss */
+.AL-app .mt-25 {
+  margin-top: 25px;
+}
+/* line 37, ../sass/partials/main/_spacings.scss */
+.AL-app .mt-30 {
+  margin-top: 30px;
+}
+/* line 42, ../sass/partials/main/_spacings.scss */
+.AL-app .mr-0 {
+  margin-right: 0;
+}
+/* line 46, ../sass/partials/main/_spacings.scss */
+.AL-app .mr-3 {
+  margin-right: 3px;
+}
+/* line 50, ../sass/partials/main/_spacings.scss */
+.AL-app .mr-5 {
+  margin-right: 5px;
+}
+/* line 54, ../sass/partials/main/_spacings.scss */
+.AL-app .mr-10 {
+  margin-right: 10px;
+}
+/* line 58, ../sass/partials/main/_spacings.scss */
+.AL-app .mr-15 {
+  margin-right: 15px;
+}
+/* line 62, ../sass/partials/main/_spacings.scss */
+.AL-app .mr-20 {
+  margin-right: 20px;
+}
+/* line 66, ../sass/partials/main/_spacings.scss */
+.AL-app .mr-25 {
+  margin-right: 25px;
+}
+/* line 70, ../sass/partials/main/_spacings.scss */
+.AL-app .mr-30 {
+  margin-right: 30px;
+}
+/* line 75, ../sass/partials/main/_spacings.scss */
+.AL-app .ml-0 {
+  margin-left: 0;
+}
+/* line 79, ../sass/partials/main/_spacings.scss */
+.AL-app .ml-3 {
+  margin-left: 3px;
+}
+/* line 83, ../sass/partials/main/_spacings.scss */
+.AL-app .ml-5 {
+  margin-left: 5px;
+}
+/* line 87, ../sass/partials/main/_spacings.scss */
+.AL-app .ml-10 {
+  margin-left: 10px;
+}
+/* line 91, ../sass/partials/main/_spacings.scss */
+.AL-app .ml-15 {
+  margin-left: 15px;
+}
+/* line 95, ../sass/partials/main/_spacings.scss */
+.AL-app .ml-20 {
+  margin-left: 20px;
+}
+/* line 99, ../sass/partials/main/_spacings.scss */
+.AL-app .ml-25 {
+  margin-left: 25px;
+}
+/* line 103, ../sass/partials/main/_spacings.scss */
+.AL-app .ml-30 {
+  margin-left: 30px;
+}
+/* line 108, ../sass/partials/main/_spacings.scss */
+.AL-app .mb-0 {
+  margin-bottom: 0;
+}
+/* line 112, ../sass/partials/main/_spacings.scss */
+.AL-app .mb-3 {
+  margin-bottom: 3px;
+}
+/* line 116, ../sass/partials/main/_spacings.scss */
+.AL-app .mb-5 {
+  margin-bottom: 5px;
+}
+/* line 120, ../sass/partials/main/_spacings.scss */
+.AL-app .mb-10 {
+  margin-bottom: 10px;
+}
+/* line 124, ../sass/partials/main/_spacings.scss */
+.AL-app .mb-15 {
+  margin-bottom: 15px;
+}
+/* line 128, ../sass/partials/main/_spacings.scss */
+.AL-app .mb-20 {
+  margin-bottom: 20px;
+}
+/* line 132, ../sass/partials/main/_spacings.scss */
+.AL-app .mb-25 {
+  margin-bottom: 25px;
+}
+/* line 136, ../sass/partials/main/_spacings.scss */
+.AL-app .mb-30 {
+  margin-bottom: 30px;
+}
+/* line 143, ../sass/partials/main/_spacings.scss */
+.AL-app .pt-0 {
+  padding-top: 0;
+}
+/* line 147, ../sass/partials/main/_spacings.scss */
+.AL-app .pt-3 {
+  padding-top: 3px;
+}
+/* line 151, ../sass/partials/main/_spacings.scss */
+.AL-app .pt-5 {
+  padding-top: 5px;
+}
+/* line 155, ../sass/partials/main/_spacings.scss */
+.AL-app .pt-10 {
+  padding-top: 10px;
+}
+/* line 159, ../sass/partials/main/_spacings.scss */
+.AL-app .pt-15 {
+  padding-top: 15px;
+}
+/* line 163, ../sass/partials/main/_spacings.scss */
+.AL-app .pt-20 {
+  padding-top: 20px;
+}
+/* line 167, ../sass/partials/main/_spacings.scss */
+.AL-app .pt-25 {
+  padding-top: 25px;
+}
+/* line 171, ../sass/partials/main/_spacings.scss */
+.AL-app .pt-30 {
+  padding-top: 30px;
+}
+/* line 176, ../sass/partials/main/_spacings.scss */
+.AL-app .pr-0 {
+  padding-right: 0;
+}
+/* line 180, ../sass/partials/main/_spacings.scss */
+.AL-app .pr-3 {
+  padding-right: 3px;
+}
+/* line 184, ../sass/partials/main/_spacings.scss */
+.AL-app .pr-5 {
+  padding-right: 5px;
+}
+/* line 188, ../sass/partials/main/_spacings.scss */
+.AL-app .pr-10 {
+  padding-right: 10px;
+}
+/* line 192, ../sass/partials/main/_spacings.scss */
+.AL-app .pr-15 {
+  padding-right: 15px;
+}
+/* line 196, ../sass/partials/main/_spacings.scss */
+.AL-app .pr-20 {
+  padding-right: 20px;
+}
+/* line 200, ../sass/partials/main/_spacings.scss */
+.AL-app .pr-25 {
+  padding-right: 25px;
+}
+/* line 204, ../sass/partials/main/_spacings.scss */
+.AL-app .pr-30 {
+  padding-right: 30px;
+}
+/* line 209, ../sass/partials/main/_spacings.scss */
+.AL-app .pb-0 {
+  padding-bottom: 0;
+}
+/* line 213, ../sass/partials/main/_spacings.scss */
+.AL-app .pb-3 {
+  padding-bottom: 3px;
+}
+/* line 217, ../sass/partials/main/_spacings.scss */
+.AL-app .pb-5 {
+  padding-bottom: 5px;
+}
+/* line 221, ../sass/partials/main/_spacings.scss */
+.AL-app .pb-10 {
+  padding-bottom: 10px;
+}
+/* line 225, ../sass/partials/main/_spacings.scss */
+.AL-app .pb-15 {
+  padding-bottom: 15px;
+}
+/* line 229, ../sass/partials/main/_spacings.scss */
+.AL-app .pb-20 {
+  padding-bottom: 20px;
+}
+/* line 233, ../sass/partials/main/_spacings.scss */
+.AL-app .pb-25 {
+  padding-bottom: 25px;
+}
+/* line 237, ../sass/partials/main/_spacings.scss */
+.AL-app .pb-30 {
+  padding-bottom: 30px;
+}
+/* line 242, ../sass/partials/main/_spacings.scss */
+.AL-app .pl-0 {
+  padding-left: 0;
+}
+/* line 246, ../sass/partials/main/_spacings.scss */
+.AL-app .pl-3 {
+  padding-left: 3px;
+}
+/* line 250, ../sass/partials/main/_spacings.scss */
+.AL-app .pl-5 {
+  padding-left: 5px;
+}
+/* line 254, ../sass/partials/main/_spacings.scss */
+.AL-app .pl-10 {
+  padding-left: 10px;
+}
+/* line 258, ../sass/partials/main/_spacings.scss */
+.AL-app .pl-15 {
+  padding-left: 15px;
+}
+/* line 262, ../sass/partials/main/_spacings.scss */
+.AL-app .pl-20 {
+  padding-left: 20px;
+}
+/* line 266, ../sass/partials/main/_spacings.scss */
+.AL-app .pl-25 {
+  padding-left: 25px;
+}
+/* line 270, ../sass/partials/main/_spacings.scss */
+.AL-app .pl-30 {
+  padding-left: 30px;
+}
+/* line 275, ../sass/partials/main/_spacings.scss */
+.AL-app .pad-0 {
+  padding: 0px;
+}
+/* line 279, ../sass/partials/main/_spacings.scss */
+.AL-app .pad-3 {
+  padding: 3px;
+}
+/* line 283, ../sass/partials/main/_spacings.scss */
+.AL-app .pad-5 {
+  padding: 5px;
+}
+/* line 287, ../sass/partials/main/_spacings.scss */
+.AL-app .pad-10 {
+  padding: 10px;
+}
+/* line 291, ../sass/partials/main/_spacings.scss */
+.AL-app .pad-15 {
+  padding: 15px;
+}
+/* line 295, ../sass/partials/main/_spacings.scss */
+.AL-app .pad-20 {
+  padding: 20px;
+}
+/* line 299, ../sass/partials/main/_spacings.scss */
+.AL-app .pad-25 {
+  padding: 25px;
+}
+/* line 303, ../sass/partials/main/_spacings.scss */
+.AL-app .pad-30 {
+  padding: 30px;
+}
+/* line 308, ../sass/partials/main/_spacings.scss */
+.AL-app .mar-0 {
+  padding: 0px;
+}
+/* line 312, ../sass/partials/main/_spacings.scss */
+.AL-app .mar-3 {
+  padding: 3px;
+}
+/* line 316, ../sass/partials/main/_spacings.scss */
+.AL-app .mar-5 {
+  padding: 5px;
+}
+/* line 320, ../sass/partials/main/_spacings.scss */
+.AL-app .mar-10 {
+  padding: 10px;
+}
+/* line 324, ../sass/partials/main/_spacings.scss */
+.AL-app .mar-15 {
+  padding: 15px;
+}
+/* line 328, ../sass/partials/main/_spacings.scss */
+.AL-app .mar-20 {
+  padding: 20px;
+}
+/* line 332, ../sass/partials/main/_spacings.scss */
+.AL-app .mar-25 {
+  padding: 25px;
+}
+/* line 336, ../sass/partials/main/_spacings.scss */
+.AL-app .mar-30 {
+  padding: 30px;
+}
+
+/*# sourceMappingURL=main.css.map */

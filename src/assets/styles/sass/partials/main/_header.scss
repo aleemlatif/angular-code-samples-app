@@ -1,0 +1,21 @@
+/**
+  @ title:  Aleems webclient stylesheet
+  @ author: Aleem Latif
+  @ desc:   styles for header
+*/
+@import 'variables';
+
+.AL-app {
+
+    .AL-header {
+        min-height: 80px;
+        background-color: $br-white;
+        border-bottom: 5px solid $color-nav-selected;
+
+        .header {
+            margin: 22px;
+            font-weight: bolder;
+        }
+    }
+}
+
