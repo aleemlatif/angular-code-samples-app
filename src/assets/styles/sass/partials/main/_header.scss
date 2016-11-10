@@ -10,9 +10,14 @@
     .AL-header {
         min-height: 80px;
         background-color: $br-white;
-        border-bottom: 5px solid $color-nav-selected;
+        border-bottom: 5px solid $header-border-bottom;
 
-        .header {
+        .navbar-brand > img {
+            display: block;
+            top: -6px;
+            position: relative;
+        }
+        .navbar-brand-title {
             margin: 22px;
             font-weight: bolder;
         }
