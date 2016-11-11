@@ -44,6 +44,7 @@ module.exports = function(config) {
       'vendor/json3/lib/json3.js',
       'vendor/ngstorage/ngStorage.js',
       'vendor/ng-idle/angular-idle.js',
+      'vendor/leaflet/dist/leaflet-src.js',
       'vendor/angular-mocks/angular-mocks.js',
       // endbower
       '*.js',

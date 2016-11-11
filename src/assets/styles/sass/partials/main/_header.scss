@@ -12,15 +12,28 @@
         background-color: $br-white;
         border-bottom: 5px solid $header-border-bottom;
 
-        .navbar-brand > img {
-            display: block;
-            top: -6px;
-            position: relative;
+        .navbar-fixed-top {
+            z-index: 1000;
+            background: wheat;
         }
+        .navbar-header {
+            float: left;
+
+            .navbar-brand {
+                img {
+                    display: block;
+                    top: -6px;
+                    position: relative;
+                }
+            }
+        }
+
         .navbar-brand-title {
             margin: 22px;
             font-weight: bolder;
+            float: left;
+            display: block;
         }
+
     }
 }
-

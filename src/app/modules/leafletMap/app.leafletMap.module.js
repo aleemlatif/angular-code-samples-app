@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('AL-app.map', []);
+    .module('AL-app.leafletMap', []);
 
 })();

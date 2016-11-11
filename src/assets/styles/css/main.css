@@ -167,15 +167,26 @@
   border-bottom: 5px solid #ad0ac9;
 }
 /* line 15, ../sass/partials/main/_header.scss */
-.AL-app .AL-header .navbar-brand > img {
+.AL-app .AL-header .navbar-fixed-top {
+  z-index: 1000;
+  background: wheat;
+}
+/* line 19, ../sass/partials/main/_header.scss */
+.AL-app .AL-header .navbar-header {
+  float: left;
+}
+/* line 23, ../sass/partials/main/_header.scss */
+.AL-app .AL-header .navbar-header .navbar-brand img {
   display: block;
   top: -6px;
   position: relative;
 }
-/* line 20, ../sass/partials/main/_header.scss */
+/* line 31, ../sass/partials/main/_header.scss */
 .AL-app .AL-header .navbar-brand-title {
   margin: 22px;
   font-weight: bolder;
+  float: left;
+  display: block;
 }
 
 /**

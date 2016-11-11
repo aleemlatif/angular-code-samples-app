@@ -149,23 +149,23 @@
                 }
             })
 
-            .state('map', {
-                url: "/map",
+            .state('leafLetMap', {
+                url: "/leafLetMap",
                 parent: '1ColViewsLayout',
                 views: {
 
                     'main@1ColViewsLayout': {
-                        templateUrl: 'app/modules/map/map.html'
+                        templateUrl: 'app/modules/leafLetMap/leafLetMap.html'
                     }
                 },
                 ncyBreadcrumb: {
-                    label: 'Map',
+                    label: 'Leaflet Map',
                     parent: 'home'
                 },
                 data: {
-                    metaTitle: 'Map',
-                    metaKeywords: 'Map, Sample, Code, Snippets, AngularJS, Single, Page, Application',
-                    metaDescription: 'Map page - AngularJS based Code Snippets Application '
+                    metaTitle: 'LeafLet Map',
+                    metaKeywords: 'LeafLet Map, Sample, Code, Snippets, AngularJS, Single, Page, Application',
+                    metaDescription: 'LeafLet Map - AngularJS based Code Snippets Application '
                 }
             })
 

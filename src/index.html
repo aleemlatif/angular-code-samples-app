@@ -26,7 +26,7 @@
     <meta name="robots" content="index, follow, no archive, noodp, noydir">
     <!-- // end : meta tags -->
 
-    <title data-ng-bind="':: ' + title + ' : Code Samples App ::'">:: Code Samples App ::</title>
+    <title data-ng-bind="':: ' + title + ' : AngularJs - Showcase App ::'">:: AngularJs - Showcase App ::</title>
 
     <!-- start : fav/touch icons -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -39,10 +39,12 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="vendor/components-font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="vendor/leaflet/dist/leaflet.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:css(.tmp) assets/styles/css/app-styles.css -->
+    <link rel="stylesheet" href="assets/styles/css/leaflet.css"/>
     <link rel="stylesheet" href="assets/styles/css/main.css"/>
     <!-- endbuild -->
     <!-- // end : CSS -->
@@ -107,6 +109,7 @@
 <script src="vendor/json3/lib/json3.js"></script>
 <script src="vendor/ngstorage/ngStorage.js"></script>
 <script src="vendor/ng-idle/angular-idle.js"></script>
+<script src="vendor/leaflet/dist/leaflet-src.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 <!-- // end : vendor javascript -->
@@ -124,6 +127,9 @@
 <script src="app/main/mainCtrl.js"></script>
 <script src="app/main/mainService.js"></script>
 <script src="app/components/navbar/navbarCtrl.js"></script>
+
+<script src="app/modules/leafletMap/app.leafletMap.module.js"></script>
+<script src="app/modules/leafletMap/leafletMapCtrl.js"></script>
 
 <script src="app/modules/sortableTable/sortableTableCtrl.js"></script>
 <script src="app/modules/sortableTable/sortableTableService.js"></script>
